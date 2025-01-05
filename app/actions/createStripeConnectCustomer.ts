@@ -34,7 +34,7 @@ export async function createStripeConnectCustomer() {
     return { account: existingStripeConnectId };
   }
 
-  // Create new connect account
+  // Create new connect account -- ere to enable also apple play and googlepay etc 
   const account = await stripe.accounts.create({
     type: "express",
     capabilities: {
